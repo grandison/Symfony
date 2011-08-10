@@ -6,9 +6,25 @@
     <?php include_title() ?>
     <link rel="shortcut icon" href="/favicon.ico" />
     <?php include_stylesheets() ?>
+    <?php use_javascript('jquery-1.6.1.min.js') ?>
+    <?php use_javascript('vote.js') ?>
     <?php include_javascripts() ?>
   </head>
   <body>
+    <div class="head">
+      <div class="menu">
+        <?php echo link_to('Главная',url_for('/frontend_dev.php/')) ?>
+        <div class="user_cab">
+          <?php if ($sf_user->isAnonymous()) { ?>
+            <?php echo link_to('Войти','/frontend_dev.php/login') ?>
+          <?php } else { ?>
+            <?php echo link_to('Мои новости','/frontend_dev.php/user/news') ?>
+            <?php echo link_to('Выйти','/frontend_dev.php/logout') ?>
+          <?php } ?>
+        </div>
+      </div>
+    </div>
     <?php echo $sf_content ?>
   </body>
 </html>
+

@@ -1,9 +1,9 @@
 # # Populate this file with data to be loaded by your ORM's *:data-load task.
 # # You can create multiple files in this directory (i.e. 010_users.yml,
 # # 020_articles.yml, etc) which will be loaded in alphabetical order.
-# # 
+# #
 # # See documentation for your ORM's *:data-load task for more information.
-# 
+#
 # User:
 #   fabien:
 #     username: fabien
@@ -15,3 +15,14 @@
 #     password: changeme
 #     name:     Kris Wallsmith
 #     email:    kris.wallsmith@symfony-project.com
+
+BlogPost:
+  post1:
+    author_id: 1
+    title: What’s happening guys?
+    source: Man I thought I have seen all the ways someone can get injured on a skateboard, but these guys found one more way I would never of seen before. Now I’m guessing this guy was to stomp on the skateboard, making the basketball fly up and hit this guy in his junk!
+  post2:
+    author_id: 2
+    title:  I’ll go ahead
+    source: Ahhhhhh, what a bizarre thing to catch on video, I mean, it’s crazy enough to have your camera out and ready as these geese are over there acting out scenes from Tekken, but then to catch that one moment! Come on! Don’t worry guys, I’m sure that goose was insured. Aflac. No, come on! That was a terrible joke! But seriously, 130,000 views in the last few days, and you know, I don’t blame the driver of the car, cause what if your just driving along and a (beep)
+

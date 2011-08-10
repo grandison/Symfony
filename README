@@ -1,0 +1,5 @@
+symfony doctrine:build --model
+symfony doctrine:build --sql
+symfony doctrine:insert-sql
+symfony doctrine:data-load
+
